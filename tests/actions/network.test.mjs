@@ -5,8 +5,8 @@ import makeRequest from "../../src/actions/network.mjs"; // Adjust the path to t
 import { describe, it, after } from "node:test";
 import {ACTIONS, ACTIONS_STATUSES} from '../../src/utils/const.mjs'
 
-const tcpPort = 12345;
-const udpPort = 54321;
+const tcpPort = 12346;
+const udpPort = 54322;
 const host = "127.0.0.1";
 const message = "Hello, Test!";
 

@@ -4,8 +4,7 @@ Generates and logs endpoint activity. Used for testing the EDR agent by allowing
 ## Getting Started
 
 ### Prerequisites
-  Ensure a recent version of Node is installed
-  Note: NPM is not required except for the convenience of using npm run
+  Ensure a recent version of Node is installed (NPM is not required except for the convenience of using npm run)
 
   ```sh
    node -v # greater than 18
@@ -14,7 +13,7 @@ Generates and logs endpoint activity. Used for testing the EDR agent by allowing
 ### Install
   Clone the project from github
   ```
-  
+  git clone git@github.com:dustinmcbride/activity_generator.git
   ```
 ### Quick Start
 
@@ -50,7 +49,7 @@ Example:
 }
 ```
 
-See a more complete examples [here](./tools/sample_instructions.json)
+See a more complete example [here](./tools/sample_instructions.json)
 
 
 ## Run
