@@ -1,0 +1,47 @@
+{
+  "actions": [
+    {
+      "action": "run process",
+      "command": "/bin/ls",
+      "args": [
+        "-l"
+      ]
+    },
+    {
+      "action": "create file",
+      "path": "./temp/temp1.txt",
+      "content": "temp 1"
+    },
+    {
+      "action": "create file",
+      "path": "./temp/temp2.txt",
+      "content": "temp 2"
+    },
+    {
+      "action": "modify file",
+      "path": "./temp/temp1.txt",
+      "content": "temp 1a"
+    },
+    {
+      "action": "delete file",
+      "path": "./temp/temp2.txt"
+    },
+    {
+      "action": "bad action"
+    },
+    {
+      "action": "network request",
+      "protocol": "TCP",
+      "host": "localhost",
+      "port": "12345",
+      "message": "Hi on TCP"
+    },
+    {
+      "action": "network request",
+      "protocol": "UDP",
+      "host": "localhost",
+      "port": "54321",
+      "message": "Hi on UDP"
+    }
+  ]
+}
