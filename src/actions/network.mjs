@@ -91,7 +91,7 @@ function initiateTcpRequest(options) {
 function initiateUdpRequest(options) {
   const { host, port, message } = options;
 
-  // This only get resolved due to the nature of UDP
+  // This only gets resolved due to the nature of UDP
   return new Promise((resolve) => {
 
     let timestamp = new Date().toISOString();
@@ -127,6 +127,6 @@ function initiateUdpRequest(options) {
       );
     });
 
-    udpClient.bind(); // Bind to a random port to enable listening
+    udpClient.bind();
   });
 }

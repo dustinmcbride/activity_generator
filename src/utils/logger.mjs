@@ -6,31 +6,27 @@ export default class Logger {
     const appDir = path.resolve();
 
     this.logEntries = [];
-    this.logDir = path.join(appDir, 'logs'); // Directory to store log files
+    this.logDir = path.join(appDir, 'logs'); 
     this.ensureLogDirectory();
     this.currentLogFile = this.getLogFileName();
   }
 
-  // Ensure the log directory exists
   ensureLogDirectory() {
     if (!fs.existsSync(this.logDir)) {
       fs.mkdirSync(this.logDir);
     }
   }
 
-  // Get the current date's log file name
   getLogFileName() {
     const date = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
     return path.join(this.logDir, `${date}.json`);
   }
 
-  // Log an entry
   log(entry) {
     this.logEntries.push(entry);
     this.writeLogs();
   }
 
-  // Write logs to file
   writeLogs() {
     const logFileName = this.currentLogFile;
     let existingLogs = [];

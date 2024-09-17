@@ -1,6 +1,5 @@
 import fs from 'fs';
 
-
 export default function parseInstructions () {
     const instructionsFilePath = process.argv[2]
 
