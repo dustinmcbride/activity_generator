@@ -1,7 +1,7 @@
 import net from "net";
 import dgram from "dgram";
 import { strict as assert } from "assert";
-import makeRequest from "../../src/actions/network.mjs"; // Adjust the path to the makeRequest module
+import makeRequest from "../../src/actions/network.mjs";
 import { describe, it, after } from "node:test";
 import {ACTIONS, ACTIONS_STATUSES} from '../../src/utils/const.mjs'
 
@@ -63,10 +63,8 @@ describe("TCP network request", async () => {
 
 describe("UDP network request", async () => {
     const udpServer = createUdpServer(udpPort);
-    // const tcpServer = createTcpServer(tcpPort);
   
     after(() => {
-    //   tcpServer.close();
       udpServer.close();
     });
   

@@ -42,6 +42,13 @@
       "host": "localhost",
       "port": "54321",
       "message": "Hi on UDP"
+    },
+    {
+      "action": "network request",
+      "protocol": "TCP",
+      "host": "google.com",
+      "port": "80",
+      "message": "Hi on TCP"
     }
   ]
 }
